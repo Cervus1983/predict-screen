@@ -40,7 +40,7 @@ ScreeningData <- "screen.csv" %>%
 	)
 
 # check for mismatching PlayerIDs ----
-full_join(
+if (FALSE) full_join(
 	select(MatchData, PlayerID, PlayerData),
 	select(ScreeningData, PlayerID, PlayerName) 
 ) %>% 
